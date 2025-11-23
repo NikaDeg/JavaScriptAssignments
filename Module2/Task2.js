@@ -7,7 +7,7 @@ for (let i= 0; i < number_of_participants; i ++){
     participants.push(name_of_participant);
 }
 participants.sort();
-document.querySelector('#list').innerHTML = 'The list of participants in alphabetical order: <br>';
+document.querySelector('#list').innerHTML = 'The list of participants in alphabetical order: ';
 for (let a = 0; a < number_of_participants; a++) {
-    document.querySelector('#task2').innerHTML += `${participants[a]}<br>`;
+    document.querySelector('#list').innerHTML += `<ol>${participants[a]}</ol>`;
 }
