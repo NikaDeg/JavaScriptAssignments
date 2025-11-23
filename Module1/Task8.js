@@ -7,9 +7,7 @@ const all_leap_years = document.querySelector("#years");
 
 for (let i = start_year; i <= end_year; i++ ){
     if (i % 4 === 0 && i % 100 !== 0 || i % 400 === 0){
-        const li = document.createElement('li');
-        li.textContent = `${i}`;
-        all_leap_years.appendChild(li);
+        all_leap_years.innerHTML += `<li>${i}</li>`;
 }
 }
 
